@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="wallpaper"></div>
+  <div class="bg-overlay"></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="../index.html">Главная</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/articles.html">Статьи</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/catalog.html">Каталог</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/contacts.html">Контакты</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/gallery.html">Галерея</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/page-nav.html">Навигация</a></li>
+          <li class="navbar-item"><a class="navbar-link active" href="../pages/registration.html">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+
+  <main class="main">
+    <div class="container inner">
+      <section>
+        <h1>Регистрация</h1>
+
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+          <fieldset>
+            <legend>Форма регистрации</legend>
+
+            <div class="form-group">
+              <label for="login">Фамилия, Имя, Отчество</label>
+              <input id="login" class="capitalized" name="login" type="text" placeholder="Введите ФИО" required minlength="3" maxlength="50">
+            </div>
+
+            <div class="form-group">
+              <label for="file">Добавьте фотографию</label>
+              <input id="file" name="file" type="file">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Адрес электронной почты</label>
+              <input id="email" name="email" type="email" placeholder="Имейл" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Пароль</label>
+              <input id="password" name="passw" type="password" placeholder="Пароль" minlength="5" maxlength="10" required>
+            </div>
+
+            <div class="form-group">
+              <label for="site">Адрес сайта</label>
+              <input id="site" name="site" type="text" placeholder="mysite.name" minlength="3" maxlength="30" required>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Дата рождения</label>
+              <input id="date" name="date" type="date">
+            </div>
+
+            <div class="form-group">
+              <label for="age">Возраст</label>
+              <input id="age" name="age" type="number" placeholder="Возраст" min="1" max="122" value="25">
+            </div>
+
+            <p>Выбрать пол:</p>
+            <div class="form-group-sm">
+              <input id="gender-male" type="radio" name="gender" value="male">
+              <label for="gender-male">Мужской</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="gender-female" type="radio" name="gender" value="female">
+              <label for="gender-female">Женский</label>
+            </div>
+
+            <p>Выберите предпочитаемую кухню:</p>
+            <div class="form-group-sm">
+              <input id="kit-ua" type="checkbox" name="kitchen[]" value="ukrainian" checked>
+              <label for="kit-ua">Украинская</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kit-gr" type="checkbox" name="kitchen[]" value="georgian">
+              <label for="kit-gr">Грузинская</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kit-it" type="checkbox" name="kitchen[]" value="italian">
+              <label for="kit-it">Итальянская</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kit-fr" type="checkbox" name="kitchen[]" value="french">
+              <label for="kit-fr">Французская</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kit-us" type="checkbox" name="kitchen[]" value="american">
+              <label for="kit-us">Американская</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kit-jp" type="checkbox" name="kitchen[]" value="japanese">
+              <label for="kit-jp">Японская</label>
+            </div>
+            <div class="form-group-sm">
+              <input id="kit-ch" type="checkbox" name="kitchen[]" value="chinese">
+              <label for="kit-ch">Китайская</label>
+            </div>
+
+            <div class="form-group">
+              <label for="txt">О себе</label>
+              <textarea id="txt" name="txt" cols="20" rows="7" placeholder="Введите информацию о себе в произвольной форме"></textarea>
+            </div>
+
+            <div class="btn-set">
+              <button type="submit">Зарегистрироваться</button>
+              <button type="reset">Очистить</button>
+            </div>
+
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      &copy; Anastasia Murenets
+    </div>
+  </footer>
+</body>
+</html>

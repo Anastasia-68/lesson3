@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: #8c837a; /* как на скрине */
+  color: #3d2f29;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  color: #5c4033;
+}
+
+h2 {
+  font-weight: 400;
+  color: #6f4e37;
+}
+
+a {
+  text-decoration: none;
+  color: #4e3b2c;
+}
+
+a:hover {
+  color: #7e5f47;
+}
+
+.bg-wallpaper {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d0eae0;
+  background-image: url(../images/Rick.png), url(../images/background.jpg);
+  background-size: 100px, cover;
+  background-position: 98% 16%, center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay {
+  background-color: rgba(63, 46, 35, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+
+
+.anchor {
+  position: relative;
+}
+
+.anchor > span {
+  position: absolute;
+  top: -100px;
+}
+
+.inner-nav {
+  margin-bottom: 1em;
+}
+
+.content {
+  background-color: #d6cfc7;
+  margin-bottom: 100px;
+  margin-top: 160px;
+  color: #3f2e23;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  width: 100vw;
+  background-color: #c3b7a6;
+  color: #5c4033;
+  padding: 1em 0;
+  
+}
+
+.header {
+  background-color: #c3b7a6;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: #5c4033;
+  padding: 1em 0;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navbar-link {
+  border: 1px solid #4e3b2c;
+  padding: 1em;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4e3b2c;
+  background-color: #effaf7;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.navbar-link:hover {
+  background-color: #4e3b2c;
+  color: #effaf7;
+  transform: scale(1.05);
+}
+
+.navbar-link.active {
+  background-color: #4e3b2c;
+  color: #effaf7;
+}
+
+.articles-comment {
+  color: #6b5e53;
+}
+
+.articles-comment:hover {
+  color: #927a67;
+}
+
+.new-articles-read {
+  color: #3f2e23;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.new-articles-read:hover {
+  color: #6f4e37;
+}
+
+.new-articles-link {
+  border-bottom: 0.7px solid #8c7766;
+  color: #5c4033;
+}
+
+.new-articles {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+}
+
+.h1-articles {
+  text-align: center;
+  color: #4e3b2c;
+}
+
+.p-articles::first-letter {
+  color: #4e3b2c;
+  font-size: 20px;
+  font-weight: 900;
+  float: left;
+  border: 2px solid #c3b7a6;
+  background-color: #e3e9e5;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.new::after {
+  content: "NEW";
+  background: #927a67;
+  color: white;
+  font-size: 70%;
+  padding: 2px 6px;
+  margin-left: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sublist {
+  list-style: outside;
+  font-size: 15px;
+  background-color: #d6cfc7;
+  color: #3f2e23;
+  margin: 10px;
+  padding: 10px 10px 10px 37px;
+}
+
+.list-catalog {
+  font-size: 30px;
+  background-color: #d9e6df;
+  color: #4e3b2c;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em 2em;
+}
+
+.link-gallery a {
+  color: #3f2e23;
+}
+
+.bg-wallpaper-gallery {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d0eae0;
+  background-image: url(../images/Rick.png), url(../images/seamless_texture.jpg);
+  background-size: 100px, 700px;
+  background-position: 98% 16%, center;
+  background-repeat: no-repeat, repeat;
+}
+
+.slide-gallery {
+  border: 10px solid #d9cfc3;
+  margin: 5px;
+}
+
+.slide-gallery:hover {
+  border: 10px solid transparent;
+  margin: 5px;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 20px;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #4e3b2c;
+  background-color: #effaf7;
+  border: 1px solid #4e3b2c;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  color: #effaf7;
+  background-color: #4e3b2c;
+}
+
+.form-style {
+  background-color: #e3e9e5;
+  color: #5c4033;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: #6f4e37;
+  text-transform: uppercase;
+}
+
+.input-name {
+  text-transform: capitalize;
+}
+
+.container--gallery {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sub-link {
+  color: #5c4033;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.sub-link:hover {
+  color: #927a67;
+}
+
+.return {
+  color: #6f4e37;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.return:hover {
+  color: #3f2e23;
+}
+
+.article-container article {
+  background-color: #effaf7;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.article-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.article-text {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.article-card {
+  background-color: #effaf7;
+  padding: 20px 30px;
+  margin: 20px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c9cfc9;
+  max-width: 900px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}

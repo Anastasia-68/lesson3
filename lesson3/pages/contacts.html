@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="wallpaper"></div>
+  <div class="bg-overlay"></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link active" href="../index.html">Главная</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/articles.html">Статьи</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/catalog.html">Каталог</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/contacts.html">Контакты</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/gallery.html">Галерея</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/page-nav.html">Навигация</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="../pages/registration.html">Регистрация</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+
+  <main class="main">
+    <div class="container inner">
+      <section>
+        <h1>Контакты</h1>
+
+        <div class="center">
+          <div>
+            <h3>Адрес</h3>
+            <p>г. Одесса<br>ул. Добровольского, 86</p>
+          </div>
+
+          <div>
+            <h3>Время работы</h3>
+            <p>Пн.-Пт.: с 9:00 до 19:00</p>
+          </div>
+
+          <div>
+            <h3>Как нас найти</h3>
+            <iframe allowfullscreen="" height="450" loading="lazy"
+            src="https://delengine.com/ru/odesa-16453/ukrposhta?page=2" style="border:0;" width="600"></iframe>
+          </div>
+        </div>
+
+        <h3 class="center">Обратная связь</h3>
+
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+          <fieldset>
+            <legend>Свяжитесь с нами</legend>
+
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input id="name" name="name" type="text" placeholder="Введите имя" required autofocus>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Контактный телефон:</label>
+              <input id="phone" name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}"
+                placeholder="380-XXXXX-XXXX" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input id="email" name="email" type="email" placeholder="Ваш e-mail" required>
+            </div>
+
+            <div class="form-group">
+              <label for="txt">Вопрос:</label>
+              <textarea id="txt" name="question" cols="40" rows="7"
+                placeholder="Задайте нам свой вопрос" required></textarea>
+            </div>
+
+            <div class="btn-set">
+              <button type="submit">Отправить</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      &copy; Anastasia Murenets
+    </div>
+  </footer>
+
+</body>
+</html>
